@@ -4,38 +4,71 @@ nav {
   left: 0px;
   width: 100%;
   background-color: black;
+  z-index: 1000;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
   display: inline-block;
-  margin-right: 35px;
+  text-align: center;
 }
 
 nav ul li a {
   display: block;
-  width: 100%;
-  /* margin: 1em; */
-  padding: 1em;
+  padding: 1em 1.5em;
   text-decoration: none;
   color: gold;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: rgb(74, 1, 74);
 }
 
-.main {
-  margin-top: 100px;
-  padding: 0 0.5em;
+body {
+  padding-top: 70px;
+  margin: 0;
+  background-color: rgb(47, 46, 46);
+  color: rgb(232, 232, 232);
 }
 
-body {
-  background-color: rgb(47, 45, 45);
+.about-title {
+  width: 100%;
+  margin-top: 40px; /* Space below the nav */
+
+  margin-left: 327px;
   color: gold;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Keep them side-by-side on desktop */
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.about-text {
+  flex: 2;
+}
+.about-image img {
+  flex: 1;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  background-color: black;
+  border: 5px solid gold;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  object-fit: cover;
 }
