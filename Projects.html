@@ -3,21 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Alan Ho | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="Main.html">Home</a></li>
-        <li><a href="About.html">About Me</a></li>
-        <li><a href="Work.html">Previous Work</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="About.html">About Me</a></li>
+          <li><a href="Work.html">Previous Work</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+      <h1 class="work-title">Experience and Skills</h1>
+    </header>
 
-  <body></body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alan Ho | Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+
+      <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="Main.html">Home</a></li>
+              <li><a href="About.html">About Me</a></li>
+              <li><a href="Work.html">Previous Work</a></li>
+              <li><a href="Projects.html">Projects</a></li>
+              <li><a href="Contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="work-container">
+          <h1 class="page-title">Technical Projects</h1>
+
+          <section class="work-section">
+            <h2>2048 Game Solver | Monte Carlo Tree Search</h2>
+            <p>
+              Engineered an automated solver for the game 2048 utilizing a
+              <strong>Monte Carlo Tree Search (MCTS)</strong> algorithm. The
+              system performs thousands of random simulations (playouts) per
+              move to evaluate potential board states, using the results to
+              select the optimal direction. I implemented a custom scoring
+              heuristic that prioritizes tile merging and corner-heavy board
+              configurations, significantly increasing the probability of
+              reaching the 2048 tile compared to standard greedy algorithms.
+            </p>
+          </section>
+
+          <section class="work-section">
+            <h2>Predictive Grade Analysis | Machine Learning</h2>
+            <p>
+              Developed a machine learning model to predict student academic
+              outcomes by implementing <strong>Perceptrons</strong> from
+              scratch. I conducted a comparative analysis between
+              <strong>Linear Regression</strong> (for continuous GPA prediction)
+              and <strong>Classification</strong> (for letter grade
+              categorization) methods. The project involved extensive data
+              preprocessing and feature engineering to evaluate model accuracy,
+              culminating in a report detailing the strengths of each method
+              regarding convergence rates and error margins.
+            </p>
+          </section>
+
+          <section class="work-section">
+            <h2>Carputer Driving Tracker | IoT & Geospatial Systems</h2>
+            <p>
+              Currently architecting a vehicle-integrated tracking system
+              powered by a <strong>Raspberry Pi 4</strong>. The system leverages
+              an <strong>RTL-SDR</strong> (Software Defined Radio) and GPS
+              modules to provide real-time spatial awareness. The backend
+              utilizes <strong>PostgreSQL with PostGIS</strong> extensions to
+              store and query complex trajectory data.
+            </p>
+
+            <strong>Key Features:</strong>
+            <ul>
+              <li>
+                <strong>Real-time Telemetry:</strong> Instantaneous "Where am
+                I?" tracking and live trip logging.
+              </li>
+              <li>
+                <strong>Historical Analytics:</strong> Users can visualize past
+                tracks and calculate road coverage using geospatial queries.
+              </li>
+              <li>
+                <strong>Containerized Architecture:</strong> Managed via
+                <strong>Docker Compose</strong> to ensure seamless deployment
+                across hardware environments.
+              </li>
+            </ul>
+          </section>
+        </main>
+
+        <footer>
+          <p>&copy; 2026 Alan Ho</p>
+        </footer>
+      </body>
+    </html>
+
+    <footer>
+      <p>&copy; 2026 Alan Ho</p>
+    </footer>
+  </body>
 </html>

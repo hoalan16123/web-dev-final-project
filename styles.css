@@ -40,7 +40,7 @@ body {
 
 .about-title {
   width: 100%;
-  margin-top: 40px; /* Space below the nav */
+  margin-top: 40px;
 
   margin-left: 327px;
   color: gold;
@@ -49,7 +49,7 @@ body {
 .about-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* Keep them side-by-side on desktop */
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
@@ -71,4 +71,53 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
   object-fit: cover;
+}
+
+.work-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.work-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark card look */
+  border-left: 4px solid gold; /* PSU-themed accent line */
+  border-radius: 4px;
+}
+
+.work-section h2 {
+  color: gold;
+  margin-top: 0;
+}
+
+.date {
+  font-style: italic;
+  color: #bbb;
+  margin-top: -10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: rgb(74, 1, 74); /* Your hover purple color */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.skills-grid p {
+  margin: 10px 0;
+}
+
+h1 {
+  margin: 40px auto;
 }
