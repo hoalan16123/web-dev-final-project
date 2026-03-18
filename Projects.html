@@ -18,86 +18,119 @@
           <li><a href="Contact.html">Contact Me</a></li>
         </ul>
       </nav>
-      <h1 class="work-title">Experience and Skills</h1>
+      <h1 class="page-title">Technical Projects</h1>
     </header>
 
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alan Ho | Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-      </head>
+    <main class="work-container">
+      <section class="work-section">
+        <button class="myBtn" data-target="MCTS">
+          2048 Game Solver | MCTS | Artifical Intelligence
+        </button>
 
-      <body>
-        <header>
-          <nav>
-            <ul>
-              <li><a href="Main.html">Home</a></li>
-              <li><a href="About.html">About Me</a></li>
-              <li><a href="Work.html">Previous Work</a></li>
-              <li><a href="Projects.html">Projects</a></li>
-              <li><a href="Contact.html">Contact Me</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        <main class="work-container">
-          <h1 class="page-title">Technical Projects</h1>
-
-          <section class="work-section">
-            <h2>2048 Game Solver | Monte Carlo Tree Search</h2>
+        <div id="MCTS" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
             <p>
-              Engineered an automated solver for the game 2048 utilizing a
-              <strong>Monte Carlo Tree Search (MCTS)</strong> algorithm. The
-              system performs thousands of random simulations (playouts) per
-              move to evaluate potential board states, using the results to
-              select the optimal direction. I implemented a custom scoring
-              heuristic that prioritizes tile merging and corner-heavy board
-              configurations, significantly increasing the probability of
-              reaching the 2048 tile compared to standard greedy algorithms.
+              Developed as part of a high-performance team, this project
+              features an automated solver for the game 2048. I co-engineered
+              the core game engine and the
+              <strong>Monte Carlo Tree Search (MCTS)</strong>
+              implementation.
             </p>
-          </section>
-
-          <section class="work-section">
-            <h2>Carputer Driving Tracker | IoT & Geospatial Systems</h2>
             <p>
-              Currently architecting a vehicle-integrated tracking system
-              powered by a <strong>Raspberry Pi 4</strong>. The system leverages
-              an <strong>RTL-SDR</strong> (Software Defined Radio) and GPS
-              modules to provide real-time spatial awareness. The backend
-              utilizes <strong>PostgreSQL with PostGIS</strong> extensions to
-              store and query complex trajectory data.
+              While the team explored various strategies, I specifically
+              developed and optimized a custom scoring heuristic that
+              prioritized "Corner-Weighting." By rewarding board states where
+              high-value tiles remained in the corners, my implementation
+              significantly outperformed greedy algorithms, and achieved a tile
+              of 2048.
             </p>
-
-            <strong>Key Features:</strong>
+            <strong>Technical Breakdown:</strong>
             <ul>
               <li>
-                <strong>Real-time Telemetry:</strong> Instantaneous "Where am
-                I?" tracking and live trip logging.
+                Game Logic: A 4x4 grid simulation using sliding/merging
+                mechanics.
               </li>
               <li>
-                <strong>Historical Analytics:</strong> Users can visualize past
-                tracks and calculate road coverage using geospatial queries.
+                MCTS Agent: For every move, the agent executes thousands of
+                random simulations (playouts) to map out potential future
+                states.
               </li>
               <li>
-                <strong>Containerized Architecture:</strong> Managed via
-                <strong>Docker Compose</strong> to ensure seamless deployment
-                across hardware environments.
+                Decision Making: The algorithm selects the move with the highest
+                average score/win-rate based on the simulated outcomes.
               </li>
             </ul>
-          </section>
-        </main>
+            <section class="social-links">
+              <div class="button-group">
+                <a href="https://github.com/takzarr/2048MCTS" class="social-btn"
+                  >2048 MCTS Github</a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-          <p>&copy; 2026 Alan Ho</p>
-        </footer>
-      </body>
-    </html>
+      <section class="work-section">
+        <button class="myBtn" data-target="grade">
+          Grade Prediction & Accuracy Analysis | Machine Learning
+        </button>
+
+        <div id="grade" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              Developed as a collaborative research project, this study utilized
+              a <strong>Multi-Layer Perceptron (MLP) Neural Network</strong>> to
+              predict student academic performance based on a diverse dataset of
+              socio-economic and behavioral features, including study habits,
+              parental education, and demographic data.
+            </p>
+
+            <p>
+              I architected and implemented the Regression Model, designed to
+              predict a continuous GPA value (e.g., 3.7) rather than a fixed
+              category. I performed a comparative analysis between my regression
+              approach and the team's classification model (letter grades). My
+              findings demonstrated that the regression model provided a higher
+              degree of predictive precision by capturing the subtle variances
+              in the data that are often lost during the "binning" process of
+              classification.
+            </p>
+            <strong>Technical Stack:</strong>
+            <ul>
+              <li>
+                Architecture: Multi-Layer Perceptron (Neural Network) with tuned
+                hidden layers.
+              </li>
+              <li>
+                Input Features: Age, Gender, Ethnicity, Parental Education, and
+                Weekly Study Time.
+              </li>
+              <li>
+                Evaluation Metrics: Analyzed model performance using Mean
+                Squared Error (MSE) for regression and Accuracy/F1-Score for
+                classification.
+              </li>
+            </ul>
+            <section class="social-links">
+              <div class="button-group">
+                <a
+                  href="https://github.com/hoalan16123/ml-grades-prediction/tree/main"
+                  class="social-btn"
+                  >Grade Prediction Github</a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2026 Alan Ho</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
