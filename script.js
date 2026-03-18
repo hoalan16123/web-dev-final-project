@@ -48,7 +48,6 @@ collapsibles.forEach((item) => {
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
-      console.log("Section collapsed.");
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
