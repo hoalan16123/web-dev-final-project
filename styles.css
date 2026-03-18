@@ -261,6 +261,7 @@ PROJECT SECTION (USING MODAL WITH JS)
   color: gold;
 }
 
+/* Animation for modal, to come from top */
 @keyframes animatetop {
   from {
     top: -300px;
