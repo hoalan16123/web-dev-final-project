@@ -9,6 +9,8 @@
 
   <body>
     <header>
+      <!-- Nav Bar to navigate to all pages. -->
+
       <nav>
         <ul>
           <li><a href="Main.html">Home</a></li>
@@ -18,10 +20,11 @@
           <li><a href="Contact.html">Contact Me</a></li>
         </ul>
       </nav>
-      <h1 class="about-title">About Alan Ho</h1>
+      <h1 class="page-title">About Alan Ho</h1>
     </header>
 
     <main>
+      <!-- Collapsible type button, that reveals content upon click. -->
       <section class="about-container">
         <div class="about-text">
           <button type="button" class="collapsible" data-target="background">
@@ -40,6 +43,7 @@
               handle complex spatial data and real-time trajectory tracking.
             </p>
           </div>
+
           <button type="button" class="collapsible" data-target="foundation">
             Technical Foundation
           </button>
@@ -71,9 +75,12 @@
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Alan Ho</p>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Alan Ho | PSU Computer Science</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

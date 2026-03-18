@@ -46,12 +46,3 @@ collapsibles.forEach((item) => {
     }
   });
 });
-
-const btn = document.querySelector("#toggleBtn");
-const content = document.querySelector("#infoBox");
-
-// 2. Add the click event
-btn.addEventListener("click", () => {
-  // 3. Toggle the 'is-visible' class
-  content.classList.toggle("is-visible");
-});

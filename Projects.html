@@ -9,6 +9,8 @@
 
   <body>
     <header>
+      <!-- Nav Bar to navigate to all pages. -->
+
       <nav>
         <ul>
           <li><a href="Main.html">Home</a></li>
@@ -21,8 +23,10 @@
       <h1 class="page-title">Technical Projects</h1>
     </header>
 
+    <!-- Modal Implementation based upon clicking a button. -->
     <main class="work-container">
       <section class="work-section">
+        <!-- Unique data-target value to differentiate modals -->
         <button class="myBtn" data-target="MCTS">
           2048 Game Solver | MCTS | Artifical Intelligence
         </button>
@@ -61,6 +65,7 @@
                 average score/win-rate based on the simulated outcomes.
               </li>
             </ul>
+            <!-- Clickable github link. -->
             <section class="social-links">
               <div class="button-group">
                 <a href="https://github.com/takzarr/2048MCTS" class="social-btn"
@@ -128,8 +133,10 @@
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Alan Ho</p>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Alan Ho | PSU Computer Science</p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
