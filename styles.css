@@ -48,6 +48,46 @@ body {
   color: gold;
 }
 
+.about-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapsible {
+  width: 100%; /* Make button fill the container width */
+  background-color: #333; /* Sleeker than 'grey' */
+  color: gold;
+  cursor: pointer;
+  padding: 20px; /* More breathing room */
+  border-width: 3px;
+  border-color: gold;
+  text-align: left; /* Align text to the left like a paragraph */
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-left: 4px solid gold; /* Vertical accent line matches your Work section */
+  margin-bottom: 5px; /* Small gap between sections */
+  transition: background-color 0.3s ease;
+  display: block; /* Forces it to behave like a structural block */
+}
+
+.collapsible:hover,
+.collapsible.active {
+  background-color: purple; /* Purple theme on interaction */
+  color: white;
+}
+
+.content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.03); /* Subtle contrast */
+  margin-bottom: 10px;
+  line-height: 1.6; /* Better readability */
+  border-left: 4px solid rgba(212, 175, 55, 0.3); /* Faded gold line for content */
+}
 .about-container {
   display: flex;
   flex-direction: row;
@@ -60,7 +100,8 @@ body {
   padding: 40px;
 }
 
-.about-text {
+.about-text,
+.collapsible {
   flex: 2;
 }
 .about-image img {

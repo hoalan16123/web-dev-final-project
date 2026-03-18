@@ -24,34 +24,45 @@
     <main>
       <section class="about-container">
         <div class="about-text">
-          <h2>Professional Background</h2>
-          <p>
-            I am a Computer Science Senior at Portland State University
-            currently focusing on backend systems, AI, and geospatial database
-            management. I am passionate about bridging the gap between low-level
-            hardware efficiency and scalable software architecture. My current
-            work involves developing a Carputer Driving Tracker, where I
-            leverage Python and <strong>Docker Compose</strong> to orchestrate a
-            containerized backend. I utilize <strong>PostgreSQL</strong> with
-            <strong>PostGIS</strong> to handle complex spatial data and
-            real-time trajectory tracking.
-          </p>
+          <button type="button" class="collapsible" data-target="background">
+            Professional Background
+          </button>
+          <div class="content">
+            <p>
+              I am a Computer Science Senior at Portland State University
+              currently focusing on backend systems, AI, and geospatial database
+              management. I am passionate about bridging the gap between
+              low-level hardware efficiency and scalable software architecture.
+              My current work involves developing a Carputer Driving Tracker,
+              where I leverage Python and <strong>Docker Compose</strong> to
+              orchestrate a containerized backend. I utilize
+              <strong>PostgreSQL</strong> with <strong>PostGIS</strong> to
+              handle complex spatial data and real-time trajectory tracking.
+            </p>
+          </div>
+          <button type="button" class="collapsible" data-target="foundation">
+            Technical Foundation
+          </button>
+          <div class="content">
+            <p>
+              Beyond my work in Python and SQL, I maintain a strong foundation
+              in <strong>C++</strong>, allowing me to understand low-level
+              system performance and memory management.
+            </p>
+          </div>
 
-          <h3>Technical Foundation</h3>
-          <p>
-            Beyond my work in Python and SQL, I maintain a strong foundation in
-            <strong>C++</strong>, allowing me to understand low-level system
-            performance and memory management.
-          </p>
-
-          <h4>Professional Experience & Education</h4>
-          <p>
-            I am currently a full-time student at PSU while maintaining
-            part-time employment at <strong>Goodwill</strong>. This dual
-            commitment has been instrumental in developing my professional
-            communication skills and the disciplined time management required
-            for high-level software development.
-          </p>
+          <button type="button" class="collapsible" data-target="dual">
+            Professional Experience & Education
+          </button>
+          <div class="content">
+            <p>
+              I am currently a full-time student at PSU while maintaining
+              part-time employment at <strong>Goodwill</strong>. This dual
+              commitment has been instrumental in developing my professional
+              communication skills and the disciplined time management required
+              for high-level software development.
+            </p>
+          </div>
         </div>
 
         <div class="about-image">
@@ -63,5 +74,6 @@
     <footer>
       <p>&copy; 2026 Alan Ho</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

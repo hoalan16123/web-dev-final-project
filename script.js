@@ -1,6 +1,7 @@
 const buttons = document.querySelectorAll(".myBtn");
 const closeSpans = document.querySelectorAll(".close");
 const allModals = document.querySelectorAll(".modal");
+const collapsibles = document.querySelectorAll(".collapsible");
 
 buttons.forEach((btn) => {
   btn.onclick = () => {
@@ -26,8 +27,31 @@ document.addEventListener("keydown", (event) => {
     allModals.forEach((modal) => {
       if (modal.style.display === "block") {
         modal.style.display = "none";
-        console.log("Modal closed via Escape key.");
       }
     });
   }
+});
+
+collapsibles.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
+
+    const content = item.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      console.log("Section collapsed.");
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+
+const btn = document.querySelector("#toggleBtn");
+const content = document.querySelector("#infoBox");
+
+// 2. Add the click event
+btn.addEventListener("click", () => {
+  // 3. Toggle the 'is-visible' class
+  content.classList.toggle("is-visible");
 });
